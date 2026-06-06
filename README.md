@@ -266,12 +266,13 @@ http://<frontend-ip>
 
 ## 6. Verifikasi Sistem
 
+untuk memastikan ketiga VM bekerja dengan benar:
 1. Buka dashboard pada browser.
 2. Masukkan data identitas player baru.
 3. Input statistik pertandingan.
-4. Klik tombol simpan.
-5. Pastikan skor performance muncul otomatis.
-6. Verifikasi data tersimpan pada MySQL.
+4. Klik tombol simpan (simpan & kalkulasi).
+5. Pastikan skor performance muncul otomatis (terlihat pada empat box di bagian atas halaman).
+6. Verifikasi data tersimpan pada MySQL (terlihat pada tabel di bagian bawah halaman).
 7. Pastikan dashboard memperbarui statistik secara dinamis.
 
 ---
