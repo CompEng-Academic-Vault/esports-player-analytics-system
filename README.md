@@ -283,14 +283,8 @@ untuk memastikan ketiga VM bekerja dengan benar:
 project-root/
 │
 ├── frontend/
-│   ├── index.html
-│   ├── css/
-│   └── js/
 │
 ├── backend/
-│   ├── app.py
-│   ├── routes/
-│   └── models/
 │
 ├── database/
 │   └── schema.sql
