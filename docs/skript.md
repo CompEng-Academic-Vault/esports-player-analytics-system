@@ -1,6 +1,7 @@
 # 🎤 Skrip Presentasi Tugas Besar
 
 ## Sistem Analisis Player Esports Multi-Node 3-Tier
+> link PPT: https://docs.google.com/presentation/d/14nmcAfRe2DmXE0lx4APRz__PBioFe1bAl02Iy7Bi_aE/edit?usp=sharing 
 
 ---
 
