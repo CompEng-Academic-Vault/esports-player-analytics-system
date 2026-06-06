@@ -1,181 +1,180 @@
-# 🎤 Struktur Estafet Presentasi Tim
+# BAGIAN 1: LATAR BELAKANG (Slide 3–6)
 
-## BAGIAN 1: LATAR BELAKANG (Konseptual & Masalah)
+## Alya (Slide 3 & 4: Pengantar & Urgensi Ekonomi Esports)
 
-**Goal:** Meyakinkan dosen bahwa proyek ini memiliki urgensi tinggi dan landasan teori cloud yang kuat.
+### Poin Penjelasan
 
-### 👤 Pembicara 1: Alya
-**Topik:** Masalah Real-World & Solusi Cloud
+* Membuka presentasi pada bagian latar belakang.
+* Menjelaskan pertumbuhan industri esports berdasarkan data ekonomi global dan nasional.
+* Membahas nilai ekonomi esports global sebesar **$1.86 miliar** dan esports Indonesia sebesar **$11.1 juta**.
+* Menunjukkan bahwa besarnya investasi dan perputaran ekonomi dalam industri ini menuntut pengelolaan tim yang terukur, profesional, dan berbasis data.
+* Menekankan bahwa keputusan manajerial tidak lagi dapat dilakukan secara subjektif atau berdasarkan intuisi semata.
 
-**Materi:**
-- Menjelaskan tren industri esports saat ini.
-- Menjelaskan pentingnya analisis data performa player secara objektif untuk mendukung pengambilan keputusan manajemen.
-- Mengidentifikasi masalah pada infrastruktur tradisional:
-  - Rentan mengalami crash.
-  - Risiko kehilangan data.
-  - Data dapat tercampur atau tidak konsisten.
-- Memperkenalkan sistem yang dikembangkan sebagai solusi berbasis cloud.
+### Keyword
 
-**Kata Kunci:**
-- Esports Analytics
-- Data-Driven Decisions
-- Cloud Mitigation
+* Economic Growth
+* Data-Driven Management
 
 ---
 
-### 👤 Pembicara 2: Rizqul
-**Topik:** Arsitektur 3-Tier & Keamanan
+## Rizqul (Slide 5: Masalah & Tantangan Manajerial)
 
-**Materi:**
-- Menjelaskan alasan pemilihan arsitektur **3-Tier Multi-Node**:
-  - Frontend Layer
-  - Backend Layer
-  - Database Layer
-- Menjelaskan konsep **Separation of Concerns** melalui pemisahan fungsi tiap server.
-- Menekankan aspek keamanan dengan mengisolasi database agar tidak dapat diakses langsung dari luar jaringan.
+### Poin Penjelasan
 
-**Kata Kunci:**
-- Separation of Concerns
-- Network Isolation
-- Database Security
+* Menjelaskan permasalahan utama yang dihadapi manajemen tim esports.
+* Membahas inkonsistensi performa atlet antar pertandingan yang menyulitkan proses evaluasi.
+* Menjelaskan risiko bias subjektivitas dalam pengambilan keputusan, seperti faktor kedekatan personal atau popularitas pemain.
+* Menunjukkan bahwa tanpa data historis yang terstruktur, proses perpanjangan kontrak maupun evaluasi pemain berpotensi tidak objektif.
+
+### Keyword
+
+* Performance Inconsistency
+* Subjective Bias
 
 ---
 
-### 👤 Pembicara 3: Algina
-**Topik:** Metodologi Automasi (Infrastructure as Code)
+## Algina (Slide 6: Solusi Sistem Analisis & Teori Cloud)
 
-**Materi:**
-- Menjelaskan tantangan deployment manual yang rentan terhadap human error.
-- Menjelaskan penerapan **Infrastructure as Code (IaC)** menggunakan:
-  - Vagrant
-  - Ansible
-- Menunjukkan bagaimana proses pembuatan server dapat berjalan otomatis dan konsisten.
+### Poin Penjelasan
 
-**Kata Kunci:**
-- Infrastructure as Code (IaC)
-- Automation Efficiency
-- Idempotency
+* Memperkenalkan solusi yang dikembangkan oleh tim.
+* Menjelaskan bahwa dashboard analisis dirancang untuk menghasilkan penilaian yang transparan dan objektif.
+* Menampilkan penggunaan parameter performa seperti:
 
----
+  * KDA (Kill, Death, Assist)
+  * Gold
+  * Kontribusi terhadap tim
+* Menjelaskan bagaimana sistem membantu pelatih dan manajemen dalam mengambil keputusan secara cepat dan berbasis data.
 
-# 🏗️ BAGIAN 2: ARSITEKTUR VM (Teknis & Spesifikasi)
+### Keyword
 
-**Goal:** Membedah infrastruktur server yang telah dibangun.
-
-### 👤 Pembicara 1: Rizqul
-**Topik:** Sisi Penyimpanan – VM Database
-
-**Materi:**
-- Menjelaskan spesifikasi **vm-database** (`192.168.56.10`).
-- Menjelaskan penggunaan **MySQL** sebagai sistem manajemen basis data.
-- Menjelaskan konsep **Persistent Storage** untuk menjaga data statistik pemain tetap aman meskipun VM dimatikan atau direstart.
-
-**Kata Kunci:**
-- MySQL
-- Persistent Storage
-- IP `192.168.56.10`
+* Objective Analysis
+* Transparent Parameters
 
 ---
 
-### 👤 Pembicara 2: Algina
-**Topik:** Sisi Logika & API – VM Backend
+# BAGIAN 2: DEMO ALAT (Slide 7–9)
 
-**Materi:**
-- Menjelaskan spesifikasi **vm-backend** (`192.168.56.20`).
-- Menjelaskan lingkungan eksekusi:
-  - PHP 8.1
-  - Composer
-- Menjelaskan fungsi backend sebagai pusat pemrosesan logika sistem.
-- Menjelaskan proses pengolahan statistik esports seperti:
-  - Win Rate
-  - KDA (Kill, Death, Assist)
-- Menjelaskan penyediaan data melalui RESTful API.
+> **Catatan:** Sesuai struktur PPT terbaru, sesi Demo Alat ditempatkan sebelum pembahasan infrastruktur agar audiens dapat memahami bentuk sistem terlebih dahulu.
 
-**Kata Kunci:**
-- Core Logic Processing
-- RESTful API
-- IP `192.168.56.20`
+## Algina (Slide 7 & 8: Arsitektur & Antarmuka Dashboard)
 
----
+### Poin Penjelasan
 
-### 👤 Pembicara 3: Alya
-**Topik:** Sisi Antarmuka – VM Frontend
+* Membuka sesi demonstrasi sistem.
+* Menjelaskan konsep dashboard berbasis **Single-Page Application (SPA)**.
+* Menguraikan tiga komponen utama dashboard:
 
-**Materi:**
-- Menjelaskan spesifikasi **vm-frontend** (`192.168.56.30`).
-- Menjelaskan penggunaan **Nginx Web Server**.
-- Menjelaskan bagaimana dashboard visual disajikan kepada pengguna.
-- Menjelaskan manfaat dashboard bagi manajer tim esports dalam membaca hasil analisis performa pemain.
+  1. Ringkasan statistik performa pada bagian atas.
+  2. Form input data pertandingan pada bagian tengah.
+  3. Tabel komparasi data historis pada bagian bawah.
+* Menunjukkan bagaimana seluruh fitur terintegrasi dalam satu halaman untuk meningkatkan efisiensi penggunaan.
 
-**Kata Kunci:**
-- Nginx Web Server
-- User Dashboard
-- IP `192.168.56.30`
+### Keyword
+
+* Dashboard Layout
+* Unified Interface
 
 ---
 
-# 🚀 BAGIAN 3: DEMO ALAT & VALIDASI (Eksekusi Real-Time)
+## Alya (Slide 9: Logika Perhitungan & Rumus Metrik)
 
-**Goal:** Membuktikan secara langsung bahwa sistem bekerja otomatis dan terintegrasi.
+### Poin Penjelasan
 
-### 👤 Pembicara 1: Algina
-**Topik:** Demo Otomatisasi Jaringan & Server
+* Menjelaskan grafik tren performa yang ditampilkan pada dashboard.
+* Menguraikan logika perhitungan yang digunakan sistem untuk menghasilkan skor performa pemain.
+* Menjelaskan parameter yang digunakan dalam proses pembobotan, meliputi:
 
-**Materi:**
-- Menampilkan terminal saat menjalankan:
-  ```bash
-  vagrant up
-  ```
+  * KDA
+  * Kill Participation
+  * Death Control
+  * Gold Per Minute (GPM)
+* Menjelaskan bagaimana backend dan AI menggabungkan berbagai metrik tersebut menjadi skor akhir yang dapat digunakan untuk evaluasi pemain.
 
-- Menampilkan proses provisioning menggunakan:
-  ```bash
-  ansible-playbook
-  ```
+### Keyword
 
-- Menjelaskan bahwa instalasi:
-  - Nginx
-  - PHP
-  - MySQL
-
-  pada seluruh VM dilakukan secara otomatis menggunakan satu blueprint konfigurasi tanpa instalasi manual.
-
-**Kata Kunci:**
-- Live Provisioning
-- Configuration Management
-- Automated Deployment
+* Performance Score Formula
+* Weighted Metrics
 
 ---
 
-### 👤 Pembicara 2: Alya
-**Topik:** Demo Integrasi Dashboard Aplikasi
+## Rizqul (Transisi Menuju Validasi Sistem)
 
-**Materi:**
-- Membuka browser dan mengakses:
-  ```
-  http://192.168.56.30
-  ```
-- Menampilkan dashboard analisis esports.
-- Mendemonstrasikan bagaimana data pemain diambil secara dinamis dari backend dan database secara real-time.
-- Menunjukkan alur komunikasi antar server dalam sistem.
+### Poin Penjelasan
 
-**Kata Kunci:**
-- End-to-End Integration
-- Data Visualization
-- User Experience
+* Menjelaskan alur perpindahan data dari frontend menuju backend.
+* Menguraikan proses:
+
+  1. Input data melalui dashboard.
+  2. Pengiriman data ke backend server.
+  3. Perhitungan rumus performa.
+  4. Penyimpanan hasil ke database.
+* Menjadikan penjelasan ini sebagai jembatan menuju pembahasan arsitektur cloud dan infrastruktur sistem.
+
+### Keyword
+
+* Data Flow
+* Functional Integration
 
 ---
 
-### 👤 Pembicara 3: Rizqul
-**Topik:** Validasi Keamanan & Penutup
+# BAGIAN 3: ARSITEKTUR VM (Slide 10–12)
 
-**Materi:**
-- Melakukan pembuktian isolasi jaringan, misalnya dengan:
-  - Menunjukkan konfigurasi `bind-address` pada database.
-  - Mencoba melakukan koneksi langsung dari frontend ke database yang berakhir gagal atau diblokir.
-- Menjelaskan bagaimana pendekatan tersebut meningkatkan keamanan sistem.
-- Menyampaikan kesimpulan akhir proyek.
+## Rizqul (Slide 10 & 11: Lapisan Database – Node Terdalam)
 
-**Kata Kunci:**
-- Network Hardening
-- Structural Resilience
-- Project Conclusion
+### Poin Penjelasan
+
+* Memperkenalkan arsitektur **3-Tier Multi-Node**.
+* Menjelaskan fungsi **Database Tier** menggunakan MySQL/MariaDB.
+* Menjelaskan alasan database ditempatkan pada server terpisah dan terisolasi.
+* Menekankan manfaat isolasi jaringan untuk meningkatkan keamanan sistem.
+* Menjelaskan bahwa database bertugas menyimpan seluruh data pertandingan dan hasil analisis secara permanen.
+
+### Keyword
+
+* Database Tier
+* Network Isolation
+* Persistent Storage
+
+---
+
+## Algina (Slide 11: Lapisan Backend – Otak Logika)
+
+### Poin Penjelasan
+
+* Menjelaskan fungsi **Backend Tier** sebagai pusat pemrosesan aplikasi.
+* Menjelaskan bagaimana backend menerima request dari frontend melalui API.
+* Menjelaskan proses:
+
+  * Validasi data
+  * Perhitungan skor performa
+  * Perhitungan win-rate
+  * Komunikasi dengan database
+* Menunjukkan bahwa backend menjadi penghubung utama antara antarmuka pengguna dan penyimpanan data.
+
+### Keyword
+
+* Application Logic Tier
+* RESTful API Processing
+
+---
+
+## Alya (Slide 11 & 12: Lapisan Frontend & Penutup Sesi)
+
+### Poin Penjelasan
+
+* Menjelaskan fungsi **Frontend Tier** yang menggunakan Nginx sebagai web server.
+* Menjelaskan peran frontend dalam menyajikan antarmuka dashboard kepada pengguna.
+* Menunjukkan bagaimana pengguna dapat mengakses data dan visualisasi performa melalui browser.
+* Menyampaikan kesimpulan proyek bahwa:
+
+  * Otomatisasi deployment berhasil dijalankan.
+  * Network hardening berhasil diterapkan.
+  * Arsitektur cloud berjalan sesuai tujuan sistem.
+* Menutup presentasi dan mengarahkan audiens ke sesi tanya jawab pada Slide 12.
+
+### Keyword
+
+* Web Server Tier
+* Structural Resilience
+* Closing Statement
