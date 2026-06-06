@@ -1,4 +1,4 @@
-# 🎮 Sistem Analisis Player Untuk Keputusan Managemen Tim Esports - Kel.8 TTK4803
+# 🎮 Sistem Analisis Player Untuk Keputusan Managemen Tim Esports - Kel.8 TK4803
 
 ![3-Tier](https://img.shields.io/badge/Architecture-3--Tier-blue?style=for-the-badge)
 ![Infrastructure](https://img.shields.io/badge/Infrastructure-Vagrant%20%7C%20Ansible-orange?style=for-the-badge)
