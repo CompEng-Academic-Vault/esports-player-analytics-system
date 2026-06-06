@@ -15,7 +15,7 @@
 
 ### Slide 4 — Pertumbuhan Ekonomi Esports
 
-> Mari kita mulai dengan melihat urgensi dari industri ini. Seperti yang tertera pada slide, pertumbuhan ekonomi esports global diproyeksikan menembus angka **1,86 miliar dolar** pada tahun 2025, sementara di pasar domestik Indonesia sendiri valuasinya telah mencapai **11,1 juta dolar**.
+> Mari kita mulai dengan melihat urgensi dari industri ini. Seperti yang tertera pada slide, pertumbuhan ekonomi esports global diproyeksikan menembus angka **4,5 miliar dolar** pada tahun 2025, sementara di pasar domestik Indonesia sendiri valuasinya telah mencapai **30,7 juta dolar**.
 
 > Angka investasi yang sangat besar ini menjadi bukti bahwa esports bukan lagi sekadar hobi, melainkan industri bernilai tinggi. Konsekuensinya, manajemen klub esports dituntut untuk menerapkan **data-driven management** atau manajemen berbasis data.
 
