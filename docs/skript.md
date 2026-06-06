@@ -11,11 +11,11 @@
 
 ### Slide 3 — Section Title: Latar Belakang
 
-> Selamat pagi/siang Pak Budhi dan rekan-rekan sekalian. Saya Alya, mewakili kelompok kami, akan membuka presentasi Tugas Besar Komputasi Awan kami yang berjudul **"Sistem Analisis Player Esports untuk Optimasi Keputusan Manajemen Tim Berbasis Data."**
+> Selamat pagi/siang Pak Budhi dan rekan-rekan sekalian. Saya Alya, mewakili kelompok kami, akan membuka presentasi Tugas Besar Komputasi Awan kami yang berjudul **"Sistem Analisis Player untuk Keputusan Manajemen Tim  Esports."**
 
 ### Slide 4 — Pertumbuhan Ekonomi Esports
 
-> Mari kita mulai dengan melihat urgensi dari industri ini. Seperti yang tertera pada slide, pertumbuhan ekonomi esports global diproyeksikan menembus angka **4,5 miliar dolar** pada tahun 2025, sementara di pasar domestik Indonesia sendiri valuasinya telah mencapai **30,7 juta dolar**.
+> Mari kita mulai dengan melihat urgensi dari industri ini. Seperti yang tertera pada slide, pertumbuhan ekonomi esports global diproyeksikan menembus angka **4,5 miliar dolar** pada saat ini, sementara valuasi masa depan diperkirakan akan mencapai **30,7 juta dolar**.
 
 > Angka investasi yang sangat besar ini menjadi bukti bahwa esports bukan lagi sekadar hobi, melainkan industri bernilai tinggi. Konsekuensinya, manajemen klub esports dituntut untuk menerapkan **data-driven management** atau manajemen berbasis data.
 
