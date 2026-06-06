@@ -5,6 +5,11 @@
 ![Backend](https://img.shields.io/badge/Backend-Python%20Flask-green?style=for-the-badge)
 ![Database](https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge)
 
+## Nama Tim
+> 1. Alya Febriana Cipta - 101032400209
+> 2. Muhammad Razes Algina - 101032400218
+> 3. Muhammad Rizqul Fauzan - 101032400208
+
 ## 📖 Deskripsi Singkat
 
 **Sistem Analisis Player Esports Multi-Node 3-Tier** adalah aplikasi berbasis web yang dirancang untuk membantu manajemen tim esports dalam mengambil keputusan kontrak player secara lebih objektif dan berbasis data.
