@@ -5,7 +5,7 @@
 ![Backend](https://img.shields.io/badge/Backend-Python%20Flask-green?style=for-the-badge)
 ![Database](https://img.shields.io/badge/Database-MySQL-blue?style=for-the-badge)
 
-## Nama Tim
+## 👥 Tim Pengembang
 > 1. Alya Febriana Cipta - 101032400209
 > 2. Muhammad Razes Algina - 101032400218
 > 3. Muhammad Rizqul Fauzan - 101032400208
