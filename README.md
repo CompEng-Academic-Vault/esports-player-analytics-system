@@ -1,4 +1,4 @@
-# 🎮 Sistem Analisis Player Esports Multi-Node 3-Tier
+# 🎮 Sistem Analisis Player Untuk Keputusan Managemen Tim Esports
 
 ![3-Tier](https://img.shields.io/badge/Architecture-3--Tier-blue?style=for-the-badge)
 ![Infrastructure](https://img.shields.io/badge/Infrastructure-Vagrant%20%7C%20Ansible-orange?style=for-the-badge)
