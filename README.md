@@ -64,7 +64,7 @@ Sistem diimplementasikan menggunakan arsitektur **3-Tier Architecture** yang dii
 
 # 🖥️ Pembagian Fungsi Virtual Machine (Node Breakdown)
 
-## 1. 🗄️ Database VM (MySQL+MariaDB)
+## 1. 🗄️ Database VM (MySQL)
 
 ### Fungsi
 
