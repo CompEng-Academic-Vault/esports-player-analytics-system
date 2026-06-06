@@ -96,7 +96,7 @@ Menjalankan seluruh logika bisnis aplikasi.
 - Mengakses Database
 - Mengirim response ke Frontend
 
-### 📊 Logika Perhitungan Performance
+### Logika Perhitungan Performance
 
 Skor performance dihitung menggunakan beberapa parameter mutlak seperti:
 
@@ -223,7 +223,7 @@ Menjalankan provisioning:
 vagrant provision
 ```
 
-> 🤖 **Alur Otomatisasi Ansible**
+> **Alur Otomatisasi Ansible**
 >
 > - Menginstal dan mengonfigurasi MySQL pada Database VM.
 > - Menginstal library Flask pada Backend VM.
