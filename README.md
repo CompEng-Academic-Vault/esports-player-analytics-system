@@ -201,9 +201,12 @@ Pastikan perangkat lokal telah terinstal:
 
 ## 1. Clone Repository
 
+Buka terminal dan lakukan instruksi berikut
+
 ```bash
-git clone https://github.com/username/esports-player-analysis.git
-cd esports-player-analysis
+cd C:\
+git clone https://github.com/CompEng-Academic-Vault/esports-player-analytics-system.git
+cd .\esports-player-analytics-system\
 ```
 
 ## 2. Menjalankan Infrastruktur VM dan Konfigurasi Otomatis dengan playbook.yml
