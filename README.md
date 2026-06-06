@@ -226,7 +226,7 @@ vagrant provision
 > 🤖 **Alur Otomatisasi Ansible**
 >
 > - Menginstal dan mengonfigurasi MySQL pada Database VM.
-> - Menginstal pustaka Flask pada Backend VM.
+> - Menginstal library Flask pada Backend VM.
 > - Menginstal konfigurasi Web Server pada Frontend VM.
 > - Mengatur konektivitas jaringan antar VM.
 
