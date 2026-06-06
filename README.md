@@ -206,7 +206,7 @@ git clone https://github.com/username/esports-player-analysis.git
 cd esports-player-analysis
 ```
 
-## 2. Menjalankan Infrastruktur VM
+## 2. Menjalankan Infrastruktur VM dan Konfigurasi Otomatis dengan playbook.yml
 
 Membangun seluruh cluster Virtual Machine menggunakan Vagrant:
 
@@ -220,62 +220,76 @@ Memastikan seluruh node berjalan:
 vagrant status
 ```
 
-## 3. Konfigurasi Otomatis Menggunakan Ansible
-
-Menjalankan provisioning:
-
-```bash
-vagrant provision
-```
-
-> **Alur Otomatisasi Ansible**
->
+Fungsi playbook.yml
 > - Menginstal dan mengonfigurasi MySQL pada Database VM.
 > - Menginstal library Flask pada Backend VM.
 > - Menginstal konfigurasi Web Server pada Frontend VM.
 > - Mengatur konektivitas jaringan antar VM.
 
-## 4. Menjalankan Backend
+## 3. Verifikasi Semua VM
 
-Masuk ke Backend VM:
+Masuk ke VM Database:
 
 ```bash
 vagrant ssh backend
 ```
 
-Menjalankan Flask:
+Cek instalasi VM Database:
 
 ```bash
-python app.py
+mysql -u admin_esport -ppassword123
 ```
 
-Backend akan berjalan pada:
+Masuk ke VM Backend:
 
-```text
-http://<backend-ip>:5000
+```bash
+USE db_esport;
+SHOW TABLES;
+EXIT;
 ```
 
-## 5. Menjalankan Frontend
+Masuk ke VM Backend:
 
-Masuk ke Frontend VM:
+```bash
+vagrant ssh backend;
+```
+
+Cek instalasi VM Backend:
+
+```bash
+sudo systemctl status backend-esport
+```
+
+Masuk ke VM Frontend:
 
 ```bash
 vagrant ssh frontend
 ```
 
-Frontend dapat diakses melalui:
+Cek instalasi VM Frontend:
 
-```text
-http://<frontend-ip>
+```bash
+sudo systemctl status nginx
 ```
 
-## 6. Verifikasi Sistem
+Cek status API VM Frontend ke VM Backend:
 
-untuk memastikan ketiga VM bekerja dengan benar:
-1. Buka dashboard pada browser.
+```bash
+curl -I http://192.168.56.10:5000/api/performa
+```
+
+## 4. Uji Sistem
+
+Untuk memastikan ketiga VM bekerja dengan benar:
+1. Buka dashboard pada browser dan salin URL dan tempelkan ke search engine
+
+```text
+http://192.168.56.12
+```
+
 2. Masukkan data identitas player baru.
 3. Input statistik pertandingan.
-4. Klik tombol simpan (simpan & kalkulasi).
+4. Klik tombol simpan (Hitung & Simpan ke Server).
 5. Pastikan skor performance muncul otomatis (terlihat pada empat box di bagian atas halaman).
 6. Verifikasi data tersimpan pada MySQL (terlihat pada tabel di bagian bawah halaman).
 7. Pastikan dashboard memperbarui statistik secara dinamis.
@@ -287,17 +301,8 @@ untuk memastikan ketiga VM bekerja dengan benar:
 ```text
 project-root/
 │
-├── frontend/
-│
-├── backend/
-│
-├── database/
-│   └── schema.sql
-│
-├── automation/
-│   ├── Vagrantfile
-│   └── playbook.yml
-│
+├── Vagrantfile
+├── playbook.yml
 └── README.md
 ```
 
