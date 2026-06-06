@@ -19,7 +19,7 @@ Sistem mengolah data performa hasil pertandingan seperti *kills, assists, deaths
 > - Membandingkan performa antar player atau antar match.
 > - Mendukung proses evaluasi kontrak berdasarkan data historis.
 
----
+
 
 # 🏗️ Arsitektur Sistem Berbasis 3 VM
 
@@ -59,7 +59,7 @@ Sistem diimplementasikan menggunakan arsitektur **3-Tier Architecture** yang dii
 
 # 🖥️ Pembagian Fungsi Virtual Machine (Node Breakdown)
 
-## 1. 🗄️ Database VM
+## 1. 🗄️ Database VM (MySQL+MariaDB)
 
 ### Fungsi
 
@@ -81,7 +81,7 @@ Bertanggung jawab menyimpan seluruh data aplikasi.
 
 ---
 
-## 2. ⚙️ Backend VM
+## 2. ⚙️ Backend VM (Python Flask)
 
 ### Fungsi
 
@@ -108,7 +108,7 @@ Skor performance dihitung menggunakan beberapa parameter mutlak seperti:
 
 ---
 
-## 3. 💻 Frontend VM
+## 3. 💻 Frontend VM (HTML+CSS, JavaScript)
 
 ### Fungsi
 
